@@ -4,17 +4,23 @@
 
 <ion-content padding id="welcome">
   <img src='assets/imgs/logo.png'class="logo"/>
- <h1>Welcome to Mytex</h1>
- <div>Your Mobile cinema experience </div>
+ <h1>Project Assistant</h1>
+ <div>L'outil essentiel pour avancer dans vos projets</div>
 
- <button
- ion-button block
- class="marginTop"
- color="secondary"
- (click)="signUp()">Sign-up</button>
- <button
- ion-button
- block color="light"
- (click)="login()">Login</button>
+<div id="Bouton">
+    <button
+    ion-button 
+    color="light"
+    round
+    (click)="signUp()">S'inscrire</button>
+ 
+    <button
+    ion-button
+    color="light"
+    round
+    (click)="login()">Se connecter</button> 
+
+</div>
+
 
 </ion-content>

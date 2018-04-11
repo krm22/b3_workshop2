@@ -1,14 +1,25 @@
+<ion-header>
+    <ion-navbar>
+      <img class="navbarLogo" src="assets/imgs/logo.png"/>
+      <ion-title>S'inscrire</ion-title>
+    </ion-navbar>
+  </ion-header>
 
-
-
-<ion-content padding>
+  <ion-content padding> 
+  
+    <div id="Formulaire">
 
     <ion-list>
 
         <ion-item>
-            <ion-label floating>Name</ion-label>
+            <ion-label floating>Nom</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
+
+          <ion-item>
+              <ion-label floating>Prénom</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
 
           <ion-item>
               <ion-label floating>Email</ion-label>
@@ -16,21 +27,23 @@
             </ion-item>
 
         <ion-item>
-          <ion-label floating>Username</ion-label>
+          <ion-label floating>Identifiant</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label floating>Password</ion-label>
+          <ion-label floating>Mot de passe</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
 
       </ion-list>
 
+      </div>
+
       <button
       ion-button
       block
       color="secondary"
-      (click)="signUp()">SignUp</button>
+      (click)="signUp()">S'inscrire</button>
 
 </ion-content>
