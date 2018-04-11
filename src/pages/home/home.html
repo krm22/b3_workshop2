@@ -5,7 +5,25 @@
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
+  <h2>Welcome to!</h2>
+
+  <ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+      <ion-title>
+        Menus
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+
+        <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+    <button ion-button block menuToggle>Toggle Menu</button>
+  </ion-content>
 
   <h2>Bienvenue sur l'Assistant Projet</h2>
 
@@ -57,9 +75,37 @@
     
   <!-- <button
    ion-button
-   block
+   full
    color="secondary"
+<<<<<<< HEAD
   (click)="logout()">Logout</button> -->
   
+=======
+   (click)="logout()">Logout</button>
+>>>>>>> 44c566252d55ac719a68aa31922418af3656e8eb
 
 </ion-content>
+
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <button ion-item (click)="openPage(homePage)">
+          Home
+        </button>
+        <button ion-item (click)="openPage(friendsPage)">
+          Friends
+        </button>
+        <button ion-item (click)="openPage(eventsPage)">
+          Events
+        </button>
+        <button ion-item (click)="closeMenu()">
+          Close Menu
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
