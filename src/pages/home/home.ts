@@ -9,10 +9,14 @@ import { NavController, App, MenuController } from 'ionic-angular';
 export class HomePage {
 
   constructor(public navCtrl: NavController, public app: App, menu: MenuController) {
+<<<<<<< HEAD
    
       menu.enable(true);
     
 
+=======
+    menu.enable(true);
+>>>>>>> 44c566252d55ac719a68aa31922418af3656e8eb
   }
 
   openPage(page) {
