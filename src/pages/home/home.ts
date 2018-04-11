@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, App } from 'ionic-angular';
+import { NavController, App, MenuController } from 'ionic-angular';
 
 
 @Component({
@@ -8,8 +8,8 @@ import { NavController, App } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public app: App) {
-
+  constructor(public navCtrl: NavController, public app: App, menu: MenuController) {
+    menu.enable(true);
   }
 
   logout(){
