@@ -1,15 +1,27 @@
+
 <ion-header>
   <ion-navbar>
     <img class="navbarLogo" src="assets/imgs/logo.png"/>
     <ion-title>Accueil</ion-title>
+    <div class = "list">
+        <div class = "item item-avatar">
+           <img src = "logo.png">
+           <h3>Avatar</h3>
+        </div>
+    </div>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <h2>Welcome to!</h2>
+=======
+  <h2>Bienvenue sur l'Assistant Projet</h2>
+  
+>>>>>>> dev
 
   <ion-header>
     <ion-navbar>
@@ -17,13 +29,13 @@
         <ion-icon name='menu'></ion-icon>
       </button>
       <ion-title>
-        Menus
+        Menu
       </ion-title>
     </ion-navbar>
   </ion-header>
-  <ion-content padding>
 
         <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+<<<<<<< HEAD
     <button ion-button block menuToggle>Toggle Menu</button>
   </ion-content>
 >>>>>>> 44c566252d55ac719a68aa31922418af3656e8eb
@@ -86,7 +98,22 @@
 =======
    (click)="logout()">Logout</button>
 >>>>>>> 44c566252d55ac719a68aa31922418af3656e8eb
+=======
+>>>>>>> dev
 
+  <div class = "table">
+    <div class = "row">  
+        <div class = "col col-50">Titre</div>
+        <div class = "col">col 2</div>
+        <div class = "col">col 3</div>
+     </div>
+
+  <div class = "row">
+    <div class = "col col-50">Titre colonne</div>
+      <div class = "col">col 2</div>
+      <div class = "col">col 3</div>
+    </div>
+  </div>
 </ion-content>
 
 <ion-menu [content]="content">
@@ -98,13 +125,13 @@
     <ion-content>
       <ion-list>
         <button ion-item (click)="openPage(homePage)">
-          Home
+          Accueil
         </button>
-        <button ion-item (click)="openPage(friendsPage)">
-          Friends
+        <button ion-item (click)="openPage(ProfilePage)">
+          Profil
         </button>
-        <button ion-item (click)="openPage(eventsPage)">
-          Events
+        <button ion-item (click)="openPage(AddProjectPage)">
+          Ajouter un projet
         </button>
         <button ion-item (click)="closeMenu()">
           Close Menu
@@ -112,3 +139,12 @@
       </ion-list>
     </ion-content>
   </ion-menu>
+
+  
+      <button class="bouton"
+   ion-button
+   full
+   color="secondary"
+   (click)="logout()">Se déconnecter</button>
+ 
+
