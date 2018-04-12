@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, App, MenuController } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
-
 
 @Component({
   selector: 'page-studentquestion',
@@ -23,7 +21,6 @@ export class StudentQuestionPage {
   }
 
   sendQuestion(){
-        this.navCtrl.push(TabsPage);
-      }
 
+      }
 }
