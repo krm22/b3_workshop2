@@ -22,7 +22,7 @@ export class AddProjectPage {
   }
 
   addProject(){
-        this.navCtrl.push(TabsPage);
+        
       }
 
 }
