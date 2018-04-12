@@ -1,13 +1,21 @@
+
 <ion-header>
   <ion-navbar>
     <img class="navbarLogo" src="assets/imgs/logo.png"/>
     <ion-title>Accueil</ion-title>
+    <div class = "list">
+        <div class = "item item-avatar">
+           <img src = "logo.png">
+           <h3>Avatar</h3>
+        </div>
+    </div>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-  <h2>Welcome to!</h2>
+  <h2>Bienvenue sur l'Assistant Projet</h2>
+  
 
   <ion-header>
     <ion-navbar>
@@ -15,75 +23,26 @@
         <ion-icon name='menu'></ion-icon>
       </button>
       <ion-title>
-        Menus
+        Menu
       </ion-title>
     </ion-navbar>
   </ion-header>
-  <ion-content padding>
 
         <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
-    <button ion-button block menuToggle>Toggle Menu</button>
-  </ion-content>
 
-  <h2>Bienvenue sur l'Assistant Projet</h2>
+  <div class = "table">
+    <div class = "row">  
+        <div class = "col col-50">Titre</div>
+        <div class = "col">col 2</div>
+        <div class = "col">col 3</div>
+     </div>
 
-  <div class="wrapper">
-      <header>
-         <h1>Ionic Technologies</h1>
-      </header>
-
-      <div class="box red">
-         <h2>Angular</h2>
-         <p>Front-end development framework</p>
-      </div>
-
-      <div class="box green">
-         <h2>Ionic Native</h2>
-         <p>Apache Cordova compatible plugins</p>
-      </div>
-
-      <div class="box blue">
-         <h2>TypeScript</h2>
-         <p>Superset of JavaScript</p>
-      </div>
-
-      <div class="box purple">
-         <h2>Sass</h2>
-         <p>Object oriented CSS</p>
-      </div>
-
-      <div class="box orange">
-         <h2>HTML 5</h2>
-         <p>Semantic Mark-up and related API's</p>
-      </div>
-
-      <div class="box violet">
-         <h2>Ionic CLI</h2>
-         <p>The engine behind the framework</p>
-      </div>
-
-      <div class="box turquoise">
-         <h2>Stencil</h2>
-         <p>Web component generator</p>
-      </div>
-
-      <div class="box yellow">
-         <h2>Web Components</h2>
-         <p>Self-packaged modules</p>
-      </div>
-
-    
-  <!-- <button
-   ion-button
-   full
-   color="secondary"
-<<<<<<< HEAD
-  (click)="logout()">Logout</button> -->
-  
-=======
-   (click)="logout()">Logout</button>
->>>>>>> 44c566252d55ac719a68aa31922418af3656e8eb
-
+  <div class = "row">
+    <div class = "col col-50">Titre colonne</div>
+      <div class = "col">col 2</div>
+      <div class = "col">col 3</div>
+    </div>
+  </div>
 </ion-content>
 
 <ion-menu [content]="content">
@@ -95,13 +54,13 @@
     <ion-content>
       <ion-list>
         <button ion-item (click)="openPage(homePage)">
-          Home
+          Accueil
         </button>
-        <button ion-item (click)="openPage(friendsPage)">
-          Friends
+        <button ion-item (click)="openPage(ProfilePage)">
+          Profil
         </button>
-        <button ion-item (click)="openPage(eventsPage)">
-          Events
+        <button ion-item (click)="openPage(AddProjectPage)">
+          Ajouter un projet
         </button>
         <button ion-item (click)="closeMenu()">
           Close Menu
@@ -109,3 +68,12 @@
       </ion-list>
     </ion-content>
   </ion-menu>
+
+  
+      <button class="bouton"
+   ion-button
+   full
+   color="secondary"
+   (click)="logout()">Se déconnecter</button>
+ 
+

@@ -2,31 +2,45 @@ page-welcome {
   #welcome{
     //background-color: color($colors, primary);
     background-image: url("../../assets/imgs/fond.jpg");
-    background-attachment:fixed;
+    background-size: auto;
+
     h1{
       font-size: 52px;
-      margin-top: 20px;
+      margin-top: 10px;
       color:white; 
       text-align: center;
+      text-shadow: 5px 10px 10px black;
     }
 
     div{
       text-align: center;
       color:white;
+      text-shadow: 3px 3px 6px black;
     }
     .marginTop{
       margin-top: 100px;
     }
     .logo{
-      height: 160px;
-      margin-top: 10px;
+      height: 180px;
+      margin-top: 5px;
     }
 
-    #Bouton{
-      margin-top: 50px;
-      display: inline-block;
+    .bouton{
+      margin-top: 40px;
+      background-color:#8B0000;
+      color:white;
     }
 
+    .test{
+      text-align: center;
+    }
+    
+    a{
+      margin-top: 200px;
+      color:white;
+      text-shadow: 2px 2px 4px black;
+      font-size: 11px;
+    }
     }
   }
 
