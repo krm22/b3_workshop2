@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <img class="navbarLogo" src="assets/imgs/logo.png"/>
+        <ion-title>Accueil</ion-title>
+    </ion-navbar>
+</ion-header>
+      
+<ion-content padding>
+    <h2>Bienvenue sur l'Assistant Projet</h2>
+            
+          
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle icon-only>
+            <ion-icon name='menu'></ion-icon>
+        </button>
+        <ion-title>
+            Menu
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+          
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+          

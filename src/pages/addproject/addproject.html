@@ -1,0 +1,43 @@
+
+<ion-header>
+        <ion-navbar>
+          <img class="navbarLogo" src="assets/imgs/logo.png"/>
+          <ion-title>Ajouter un nouveau projet :</ion-title>
+        </ion-navbar>
+      </ion-header>
+
+<ion-content padding>
+      <div id="Formulaire">
+
+            <ion-list>
+        
+                <ion-item>
+                    <ion-label floating>Nom du projet</ion-label>
+                    <ion-input type="text"></ion-input>
+                  </ion-item>
+        
+                  <ion-item>
+                      <ion-label floating>Membres</ion-label>
+                      <ion-input type="search"></ion-input>
+                    </ion-item>
+        
+                  <ion-item>
+                      <ion-label floating>Description</ion-label>
+                      <ion-input type="text"></ion-input>
+                    </ion-item>
+        
+                <ion-item>
+                  <ion-label floating>Date de fin</ion-label>
+                  <ion-input type="date"></ion-input>
+                </ion-item>
+        
+            </ion-list>
+        </div>
+
+        <button
+        ion-button
+        block
+        color="secondary"
+        (click)="addProject()">Ajouter</button>
+  
+  </ion-content>
