@@ -1,51 +1,83 @@
 
-<ion-header>
-  <ion-navbar>
-    <img class="navbarLogo" src="assets/imgs/logo.png"/>
-    <ion-title>Accueil</ion-title>
-    <div class = "list">
-        <div class = "item item-avatar">
-           <img src = "logo.png">
-           <h3>Avatar</h3>
+    <ion-header>
+      <ion-navbar>
+        <img class="navbarLogo" src="assets/imgs/logo.png"/>
+        <ion-title>Accueil</ion-title>
+        <div class = "list">
+            <div class = "item item-avatar">
+               <img src = "logo.png">
+               <h3>Avatar</h3>
+            </div>
         </div>
-    </div>
-  </ion-navbar>
-</ion-header>
+      </ion-navbar>
+    </ion-header>
 
+    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
 
-<ion-content padding>
-  <h2>Bienvenue sur l'Assistant Projet</h2>
-  
+    <ion-content>
+    <h2>Bienvenue sur l'Assistant Projet</h2>
+      <div class="wrapper">
+          <header>
+             <h1>Ionic Technologies</h1>
+          </header>
 
-  <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle icon-only>
-        <ion-icon name='menu'></ion-icon>
-      </button>
-      <ion-title>
-        Menu
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
+          <div class="box red">
+             <h2>Angular</h2>
+             <p>Front-end development framework</p>
+          </div>
 
-        <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+          <div class="box green">
+             <h2>Ionic Native</h2>
+             <p>Apache Cordova compatible plugins</p>
+          </div>
 
-  <div class = "table">
-    <div class = "row">  
-        <div class = "col col-50">Titre</div>
-        <div class = "col">col 2</div>
-        <div class = "col">col 3</div>
-     </div>
+          <div class="box blue">
+             <h2>TypeScript</h2>
+             <p>Superset of JavaScript</p>
+          </div>
 
-  <div class = "row">
-    <div class = "col col-50">Titre colonne</div>
-      <div class = "col">col 2</div>
-      <div class = "col">col 3</div>
-    </div>
-  </div>
-</ion-content>
+          <div class="box purple">
+             <h2>Sass</h2>
+             <p>Object oriented CSS</p>
+          </div>
 
-<ion-menu [content]="content">
+          <div class="box orange">
+             <h2>HTML 5</h2>
+             <p>Semantic Mark-up and related API's</p>
+          </div>
+
+          <div class="box violet">
+             <h2>Ionic CLI</h2>
+             <p>The engine behind the framework</p>
+          </div>
+
+          <div class="box turquoise">
+             <h2>Stencil</h2>
+             <p>Web component generator</p>
+          </div>
+
+          <div class="box yellow">
+             <h2>Web Components</h2>
+             <p>Self-packaged modules</p>
+          </div>
+
+          <div class = "table">
+            <div class = "row">
+                <div class = "col col-50">Titre</div>
+                <div class = "col">col 2</div>
+                <div class = "col">col 3</div>
+             </div>
+
+          <div class = "row">
+            <div class = "col col-50">Titre colonne</div>
+              <div class = "col">col 2</div>
+              <div class = "col">col 3</div>
+            </div>
+          </div>
+      </div>
+    </ion-content>
+
+  <ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
         <ion-title>Menu</ion-title>
@@ -69,11 +101,6 @@
     </ion-content>
   </ion-menu>
 
-  
-      <button class="bouton"
-   ion-button
-   full
-   color="secondary"
-   (click)="logout()">Se déconnecter</button>
+  <button class="bouton" ion-button full color="secondary" (click)="logout()">Se déconnecter</button>
  
 
